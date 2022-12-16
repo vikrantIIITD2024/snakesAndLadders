@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="blue_won">
+   <children>
+      <ImageView fitHeight="693.0" fitWidth="693.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@winner.png" />
+         </image>
+         <effect>
+            <BoxBlur />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="420.0" fitWidth="296.0" layoutX="201.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngegg%20(9).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="160.0" fitWidth="141.0" layoutX="379.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@party.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="160.0" fitWidth="141.0" layoutX="218.0" layoutY="418.0" pickOnBounds="true" preserveRatio="true" rotate="-177.7">
+         <image>
+            <Image url="@party.png" />
+         </image>
+      </ImageView>
+      <Circle fill="DODGERBLUE" layoutX="351.0" layoutY="248.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="241.0" fitWidth="231.0" layoutX="243.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@trophy.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

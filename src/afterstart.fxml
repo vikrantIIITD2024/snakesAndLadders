@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="afterNext">
+   <children>
+      <ImageView fitHeight="702.0" fitWidth="712.0" layoutX="-7.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@jj.png" />
+         </image>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="636.0" fitWidth="668.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@snake-and-ladders.png" />
+         </image>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="117.0" fitWidth="128.0" layoutX="290.0" layoutY="521.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngegg%20(7).png" />
+         </image>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="420.0" fitWidth="296.0" layoutX="201.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngegg%20(9).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="243.0" layoutY="193.0" prefHeight="54.0" prefWidth="236.0" text="Choose Name and Color" textAlignment="JUSTIFY" textFill="#791a1c">
+         <font>
+            <Font name="Myanmar MN" size="19.0" />
+         </font>
+      </Label>
+      <Circle fx:id="nilli_gotti" fill="DODGERBLUE" layoutX="261.0" layoutY="273.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="hari_gotti" fill="#41903a" layoutX="261.0" layoutY="347.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="94.0" fitWidth="117.0" layoutX="313.0" layoutY="427.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pngegg%20(10).png" />
+         </image>
+      </ImageView>
+      <Button fx:id="ctsbb" layoutX="319.0" layoutY="434.0" mnemonicParsing="false" onAction="#changeToSnakeBoard" opacity="0.0" prefHeight="79.0" prefWidth="79.0" text="gamestart">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="p1" layoutX="296.0" layoutY="255.0" prefHeight="36.0" prefWidth="175.0" promptText="Player1" />
+      <TextField fx:id="p2" layoutX="296.0" layoutY="329.0" prefHeight="36.0" prefWidth="175.0" promptText="Player2" />
+   </children>
+</AnchorPane>
